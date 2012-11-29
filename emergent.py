@@ -50,7 +50,19 @@ class Base(object):
             self.log_dir = os.path.join(log_dir_abs, self.__class__.__name__)
         else:
             self.log_dir = os.path.join(self.prefix, log_dir, self.__class__.__name__)
-	self.plot_prefix_png = self.prefix + 'plots/png/' + self.__class__.__name__ + '_'
+
+        if not os.path.exists(self.log_dir):
+            os.makedirs(self.log_dir)
+        if not os.path.exists(self.prefix+'plots'):
+            os.makedirs(self.prefix+'plots')
+        if not os.path.exists(self.prefix+'plots/png'):
+            os.makedirs(self.prefix+'plots/png')
+        if not os.path.exists(self.prefix+'plots/eps'):
+            os.makedirs(self.prefix+'plots/eps')
+        if not os.path.exists(self.prefix+'plots/pdf'):
+            os.makedirs(self.prefix+'plots/pdf')
+
+        self.plot_prefix_png = self.prefix + 'plots/png/' + self.__class__.__name__ + '_'
 	self.plot_prefix_eps = self.prefix + 'plots/eps/' + self.__class__.__name__ + '_'
 	self.plot_prefix_pdf = self.prefix + 'plots/pdf/' + self.__class__.__name__ + '_'
 	self.colors = ('k','r','b','y','c','g','m','w')
