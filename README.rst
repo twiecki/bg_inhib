@@ -18,18 +18,26 @@ analyze the model presented in:
 basal ganglia." Wiecki, T.V. & Frank, M.J., Psychological Review, In
 Press
 
-To run the simulations:
+To run the selective response inhibition simulations:
 
 ::
 
-  python emergent.py --run -b 4 -g saccade -g stopsignal
+  python emergent.py --run -b 4 -g saccade
+
+
+To run the stop-signal simulations:
+
+::
+
+  python emergent.py --run -b 4 -g stopsignal
 
 This should populate the logs directory. After this is finished (might
 take quite some time), run:
 
 ::
 
-  python emergent.py --analyze -b 4 -g saccade -g stopsignal
+  python emergent.py --analyze -b 4 -g saccade
+  python emergent.py --analyze -b 4 -g stopsignal
 
 This should populate the plots subdirectories. Note that plots used in
 the final paper are often edited to improve quality.
