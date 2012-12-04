@@ -34,7 +34,7 @@ class Base(object):
 	self.proj = proj_name
 
 	if prefix is None:
-	    prefix = '.'
+	    prefix = './'
 	self.prefix = prefix
 	self.batches = batches
 	self.data = {}
