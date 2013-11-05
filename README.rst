@@ -2,21 +2,20 @@
 Introduction
 ************
 
-:Date: 29 November 2012
+:Date: 05 November 2013
 :Authors: Thomas V. Wiecki, Michael J. Frank
 :Contact: thomas.wiecki@gmail.com
 :Web site: http://github.com/twiecki/bg_inhib
 :Paper: http://ski.clps.brown.edu/papers/WieckiFrank_psyrev.pdf
 :Copyright: This document has been placed in the public domain.
 :License: Simplified BSD
-:Version: 1.0
+:Version: 1.1
 
 This is the neural network model and accompanying scripts to run and
 analyze the model presented in:
 
 "A computational model of inhibitory control in frontal cortex and
-basal ganglia." Wiecki, T.V. & Frank, M.J., Psychological Review, In
-Press
+basal ganglia." Wiecki, T.V. & Frank, M.J., Psychological Review, 2013
 
 To run the selective response inhibition simulations:
 
